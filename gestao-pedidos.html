@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.7">
+<title>Gestão de Pedidos</title>
+<link rel="stylesheet" href="gestao-pedidos.css">
+<link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <div id="menu-container"></div>
+
+  <main class="container">
+    <h1>Gestão de Pedidos</h1>
+
+    <div class="form-box">
+      <input type="text" id="nomeUsuario" placeholder="Nome do Usuário">
+      <input type="text" id="idUsuario" placeholder="Digite o seu ID" readonly>
+      <input type="text" id="nomeProduto" placeholder="Digite o produto" readonly>
+      <input type="number" id="quantidade" placeholder="Digite a quantidade" min="1" value="1">
+      <button id="btnAdicionar">Adicionar Pedido</button>
+    </div>
+
+    <div class="tabela-box">
+      <div class="tabela-header">
+        <span>Usuário</span>
+        <span>ID</span>
+        <span>Produto</span>
+        <span>Quantidade</span>
+        <span>Status</span>
+        <span>Ações</span>
+      </div>
+      <div id="tabelaCorpo"></div>
+    </div>
+
+    <h2 id="totalPedidos">Total Pedidos:0</h2>
+  </main>
+
+<script src="menu.js"></script>
+<script src="gestao-pedidos.js"></script>
+</body>
+</html>

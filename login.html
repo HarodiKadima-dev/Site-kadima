@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar Sessão - Kadima</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- Barra laranja do topo com seta e tabs -->
+  <div class="top-bar">
+    <button class="back-btn" id="backBtn">←</button>
+    <div class="tabs">
+      <button id="tabLogin" class="active">Iniciar Sessão</button>
+      <button id="tabRegister">Criar Conta</button>
+    </div>
+  </div>
+
+  <!-- Conteúdo do formulário -->
+  <div class="container">
+    <h2>Bem-vindo de volta!</h2>
+
+    <!-- Campos de entrada -->
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <input type="password" id="senha" placeholder="Palavra Passe">
+
+    <!-- Aqui aparece mensagem de erro ou sucesso -->
+    <p id="mensagem" class="msg"></p>
+
+    <button id="btnLogin">Entrar</button>
+  </div>
+
+<script src="login.js"></script>
+</body>
+</html>

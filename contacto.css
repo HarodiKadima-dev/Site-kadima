@@ -1,0 +1,71 @@
+#estilizarOCorpo{
+  
+  animation: slideIn 3s ease-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+.suporte {
+  padding: 60px 20px;
+}
+
+.suporte h2 {
+  color: #00e676;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.suporte h3 {
+  color: #00e676;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.suporte p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background: #00e676;
+  color: #000;
+  padding: 14px 45px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: 0 0 20px #00e67680;
+  transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background: #00c864;
+  box-shadow: 0 0 30px #00e676;
+}
+
+.rodape {
+  margin-top: 60px;
+  padding: 30px 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #ccc;
+}
+

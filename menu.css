@@ -1,0 +1,92 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #000;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.menu-btn {
+  background: #FFA500;
+  border: none;
+  font-size: 20px;
+  color: #000;
+  width: 45px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.menu-btn:hover {
+  transform: scale(1.05);
+  background: #ffb733;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -1000px;
+  width: 200px;
+  height: 100%;
+  background: #111;
+  padding: 60px 20px;
+  transition: 0.3s ease;
+  z-index: 10;
+  display: flex;           /* adicionado */
+  flex-direction: column;  /* adicionado */
+  gap: 12px;               /* espaçamento entre os links */
+}
+
+.menu.active {
+  right: 0;
+}
+
+.menu a {
+  display: block;
+  color: #e5e5e5;
+  text-decoration: none;
+  padding: 12px 8px;       /* reduzi o padding vertical pra compensar o gap */
+  border-bottom: 1px solid #333;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+/* Linha amarela escondida embaixo */
+.menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #FFA500;
+  transition: width 0.25s ease;
+}
+
+/* Hover: desliza, fica amarelo e mostra a linha */
+.menu a:hover {
+  color: #FFA500;
+  transform: translateX(8px);
+  border-bottom-color: transparent;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Item ativo */
+.menu a.active {
+  color: #FFA500;
+  border-bottom-color: #FFA500;
+}
+
+/* Remove a borda do último item pra não ficar sobrando */
+.menu a:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produtos - Kadima Services</title>
+<link rel="stylesheet" href="produtos.css">
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="destaques.css">
+</head>
+<body>
+  <div id="menu-container"></div>
+
+  <main class="container">
+    <input type="text" id="search" placeholder="Procurar produto...">
+    
+    <section class="destaques">
+      <h2>Destaques do momento</h2>
+      <div class="destaques-list" id="destaquesList"></div>
+    </section>
+
+      <div class="produtos-grid">
+        
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="foto1.png" alt="foto1">
+          <h2>Iphone 16</h2>
+          <h3>256GB</h3>
+          <h4>ID:IPH16</h4>
+          <p class="preco">Preço:880.000Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('Iphone 16','IPH16','880.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="foto2.png" alt="foto2">
+          <h2>Laptop Dell 15</h2>
+          <h3>8GB RAM / 512GB SSD</h3>
+          <h4>ID:LA001</h4>
+          <p class="preco">Preço:450.000Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('Laptop Dell 15','LA001','450.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="foto3.png" alt="foto3">
+          <h2>PlayStation 5</h2>
+          <h3>1TB</h3>
+          <h4>ID:PS5</h4>
+          <p class="preco">Preço:500.000Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('PlayStation 5','PS5','500.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <img src="foto4.png" alt="foto4">
+          <h2>Iphone 17 Pro Max</h2>
+          <h3>256GB</h3>
+          <h4>ID:IPH17</h4>
+          <p class="preco">Preço:1.000.000Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('Iphone 17 Pro Max','IPH17','1.000.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <img src="foto5.png" alt="foto5">
+          <h2>Iphone 15 Pro Max</h2>
+          <h3>128GB</h3>
+          <h4>ID:IPH15</h4>
+          <p class="preco">Preço:700.000Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('Iphone 15 Pro Max','IPH15','700.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+          <img src="foto6.png" alt="foto6">
+          <h2>Iphone 14 Pro Max</h2>
+          <h3>128GB</h3>
+          <h4>ID:IPH14</h4>
+          <p class="preco">Preço:550.000Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('Iphone 14 Pro Max','IPH14','550.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+         <img src="foto7.png" alt="foto7">
+          <h2>Samsung S25 Ultra</h2>
+          <h3>512GB</h3>
+          <h4>ID:S25</h4>
+          <p class="preco">Preço:1.000.000KZ</p>
+          <button class="btn-pedido" onclick="adicionarPedido('Samsung S25 Ultra','S25','1.000.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+          <img src="foto8.png" alt="foto8">
+          <h2>Samsung S24 Ultra</h2>
+          <h3>1TB</h3>
+          <h4>ID:S24</h4>
+          <p class="preco">Preço:900.000Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('Samsung S24 Ultra','S24','900.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card">
+          <img src="foto9.png" alt="foto9">
+          <h2>Samsung S23 Ultra</h2>
+          <h3>256GB</h3>
+          <h4>ID:S23</h4>
+          <p class="preco">Preço:650.000Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('Samsung S23 Ultra','S23','650.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card">
+          <img src="foto10.png" alt="foto10">
+          <h2>Laptop Dell</h2>
+          <h3>16GB</h3>
+          <h4>ID:Dell</h4>
+          <p class="preco">Preço:280.000Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('Laptop Dell','Dell','280.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card">
+          <img src="foto11.png" alt="foto11">
+          <h2>Lenovo</h2>
+          <h3>8GB</h3>
+          <h4>ID:LEN</h4>
+          <p class="preco">Preço:460.000Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('Lenovo','LEN','460.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="card">
+          <img src="foto12.png" alt="foto12">
+          <h2>Laptop HP</h2>
+          <h3>16GB RAM / 1TB SSD</h3>
+          <h4>ID:LAPHP</h4>
+          <p class="preco">Preço:420.000Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('Laptop HP','LAPHP','420.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="card">
+          <img src="foto13.png" alt="foto13">
+          <h2>JBL</h2>
+          <h3>Bateria:12h</h3>
+          <h4>ID:JBL</h4>
+          <p class="preco">Preço:180.000Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('JBL','JBL','180.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="card">
+          <img src="foto14.png" alt="foto14">
+          <h2>AirPods Pro</h2>
+          <h3>2ª Geração</h3>
+          <h4>ID:AIRPODS</h4>
+          <p class="preco">Preço:90.000Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('AirPods Pro','AIRPODS','90.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="card">
+         <img src="foto15.png" alt="foto15">
+          <h2>iPad 10ª Geração</h2>
+          <h3>64GB</h3>
+          <h4>ID:IPAD10</h4>
+          <p class="preco">Preço:320.000Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('iPad 10ª Geração','IPAD10','320.000Kz')">Adicionar Pedido</button>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="card">
+          <img src="foto16.png" alt="PC Gamer Mesa">
+          <h2>PC Mesa Escritório</h2>
+          <h3>16GB RAM / 512GB SSD</h3>
+          <h4>ID: PCG16</h4>
+          <p class="preco">850.000 Kz</p>
+          <button class="btn-pedido" onclick="adicionarPedido('PC Gamer Mesa', 'PCG16', '850.000 Kz')">
+            Adicionar Pedido
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<script src="menu.js"></script>
+<script src="destaques.js"></script>
+<script src="produtos.js"></script>
+</body>
+</html>
