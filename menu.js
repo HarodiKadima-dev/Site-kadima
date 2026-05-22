@@ -4,7 +4,7 @@ const menuContainer = document.getElementById('menu-container');
 // HTML do header e menu
 menuContainer.innerHTML = `
   <header class="header">
-    <img src="../imagens/logo.png" alt="Kadima" class="logo">
+    <img src="logo.png" alt="Kadima" class="logo">
     <button class="menu-btn" id="menuBtn">☰</button>
   </header>
 
